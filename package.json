@@ -1,0 +1,21 @@
+{
+    "name": "select.js",
+    "version": "0.0.0",
+    "description": "A JavaScript utility library for querying arrays, inspired by Microsoft's LINQ and MongoDB's querying syntax. Works in both browser and Node.js ",
+    
+    "main": "index.js",
+    
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Sironfoot/Select.js.git"
+    },
+    
+    "author": "Dominic Pettifer",
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "gitHead": "017fdc3488994b890c14338c25288038a2366e0e"
+}
