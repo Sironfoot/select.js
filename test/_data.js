@@ -321,32 +321,28 @@ var scores = [{
     score: 1
 },
 {
-    name: 'Number 2',
-    score: 2
-},
-{
     name: 'Number 3',
     score: 3
-},
-{
-    name: 'Number 4',
-    score: 4
 },
 {
     name: 'Number 5',
     score: 5
 },
 {
+    name: 'Number 2',
+    score: 2
+},
+{
     name: 'Number 6',
     score: 6
 },
 {
-    name: 'Number 7',
-    score: 7
-},
-{
     name: 'Number 8',
     score: 8
+},
+{
+    name: 'Number 4',
+    score: 4
 },
 {
     name: 'Number 9',
@@ -355,6 +351,10 @@ var scores = [{
 {
     name: 'Number 10',
     score: 10
+},
+{
+    name: 'Number 7',
+    score: 7
 }];
 
 exports.scores = scores;
@@ -362,9 +362,28 @@ exports.scores = scores;
 
 
 
+var people = [{
+    name: 'BB',
+    age: 1
+},
+{
+    name: 'CC',
+    age: 1
+},
+{
+    name: 'AA',
+    age: 1
+},
+{
+    name: 'DD',
+    age: 3
+},
+{
+    name: 'EE',
+    age: 2
+}]
 
-
-
+exports.people = people;
 
 
 
