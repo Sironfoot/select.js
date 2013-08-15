@@ -21,10 +21,10 @@ describe('#sum()', function() {
         assert.equal(totalScores, 55);
     });
     
-    it('should return zero for empty array', function() {
+    it('should return null for empty array', function() {
         var emptyArray = [];
         var total = emptyArray.$_sum('test');
-        assert.equal(total, 0);
+        assert.equal(total, null);
     });
 });
 
@@ -41,10 +41,10 @@ describe('#min()', function() {
         assert.equal(minScore, 1);
     });
     
-    it('should return zero for empty Array', function() {
+    it('should return null for empty Array', function() {
         var emptyArray = [];
         var min = emptyArray.$_min('test');
-        assert.equal(min, 0);
+        assert.equal(min, null);
     });
 });
 
@@ -61,10 +61,10 @@ describe('#max()', function() {
         assert.equal(maxScore, 10);
     });
     
-    it('should return zero for empty Array', function() {
+    it('should return null for empty Array', function() {
         var emptyArray = [];
         var max = emptyArray.$_max('test');
-        assert.equal(max, 0);
+        assert.equal(max, null);
     });
 });
 
@@ -81,10 +81,10 @@ describe('#average()', function() {
         assert.equal(average, 5.5);
     });
     
-    it('should return zero for empty Array', function() {
+    it('should return null for empty Array', function() {
         var emptyArray = [];
         var average = emptyArray.$_average('test');
-        assert.equal(emptyArray, 0);
+        assert.equal(average, null);
     });
 });
 
