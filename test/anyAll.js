@@ -24,15 +24,15 @@ describe('#any()', function() {
     
     it('should return false when no match', function() {
         var hasCustomer = customers.$_any({ name: 'George Bush' });
-        assert.ok(!hasCustomer);
+        assert.ok(!hasCustomer, 'AA');
         
         var hasScore = scores.$_any({ score: { $gt: 100 }});
-        assert.ok(!hasScore);
+        assert.ok(!hasScore, 'BB');
         
         var hasPerson = people.$_any(function(person) {
             return person.name === 'XX';
         });
-        assert.ok(!hasPerson);
+        assert.ok(!hasPerson, 'CC');
     });
     
     it('should return true/false with no query, depending on whether collection contains any items', function() {
@@ -48,7 +48,8 @@ describe('#any()', function() {
 describe('#all()', function() {
     it('should return true on all match', function() {
         var allScoresMoreThanZero = scores.$_all({ score: { $gt: 0 }});
-        assert.ok(allScoressMoreThanZero);
+
+        assert.ok(allScoresMoreThanZero);
     });
     
     it('should return false on not all matching query', function() {
