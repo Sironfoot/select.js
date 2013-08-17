@@ -20,7 +20,7 @@ describe('#first()', function() {
         var emptyArray = [];
         var firstItem = emptyArray.$_first();
         
-        assert.ok(firstItems === null);
+        assert.ok(firstItem === null);
     });
     
     it('should allow searches', function() {
