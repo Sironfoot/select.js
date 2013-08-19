@@ -92,10 +92,10 @@ describe('#orderby()', function() {
         assert.equal(result[2].name, 'AA');
         assert.equal(result[2].age, 1);
         
-        assert.equal(result[3].name, 'DD');
-        assert.equal(resulr[3].age, 2);
+        assert.equal(result[3].name, 'EE');
+        assert.equal(result[3].age, 2);
         
-        assert.equal(result[4].name, 'EE');
+        assert.equal(result[4].name, 'DD');
         assert.equal(result[4].age, 3);
     });
 });
