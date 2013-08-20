@@ -75,6 +75,20 @@ describe('#where()', function() {
         });
     });
     
+    it('should support multiple query selectors', function() {
+        var result = scores.$_where({
+            score: {
+                $in: [ 3, 4, 5, 7, 8, 9 ],
+                $gt: 5,
+                $lt: 8
+            }
+        });
+        
+        assert.ok(Array.isArray(result));
+        assert.equal(result.length, 1);
+        assert.equal(result[0].score, 7);
+    });
+    
     it('should support In searches', function() {
         var result = scores.$_where({ score: { $in: [ 1, 3, 5, 7, 9 ] }});
         
