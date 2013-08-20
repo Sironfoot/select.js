@@ -114,4 +114,20 @@ describe('#where()', function() {
         assert.equal(result.length, 1)
         assert.equal(result[0].name, 'Number 1');
     });
+    
+    it('should allow searching simple arrays', function() {
+        var items = [ 1, 2, 4, 5, 7, 8, 10 ];
+        
+        var result = items.$_where(7);
+        assert.ok(Array.isArray(result));
+        assert.equal(result.length, 1);
+        assert.equal(result[0], 7);
+        
+        var stringItems = [ '1', '2', '4', '5', '7', '8', '10' ];
+        
+        var stringResult = items.$_where('7');
+        assert.ok(Array.isArray(stringResult));
+        assert.equal(stringResult.length, 1);
+        assert.equal(stringResult[0], '7');
+    });
 });
