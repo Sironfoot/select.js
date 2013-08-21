@@ -52,6 +52,12 @@ describe('#min()', function() {
         var min = emptyArray.$_min('test');
         assert.equal(min, null);
     });
+    
+    it('should find smallest value in simple numeric array', function() {
+        var simpleArray = [ 3, 6, 2, 8, 4, 5 ];
+        var min = simpleArray.$_min();
+        assert.equal(min, 2);
+    });
 });
 
 describe('#max()', function() {
@@ -72,6 +78,12 @@ describe('#max()', function() {
         var max = emptyArray.$_max('test');
         assert.equal(max, null);
     });
+    
+    it('should find largest value in simple numeric array', function() {
+        var simpleArray = [ 3, 6, 2, 8, 4, 5 ];
+        var min = simpleArray.$_max();
+        assert.equal(min, 8);
+    });
 });
 
 describe('#average()', function() {
@@ -91,6 +103,12 @@ describe('#average()', function() {
         var emptyArray = [];
         var average = emptyArray.$_average('test');
         assert.equal(average, null);
+    });
+    
+    it('should find the average in a simple numeric array', function() {
+        var simpleArray = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+        var average = simpleArray.$_average();
+        assert.equal(average, 5.5);
     });
 });
 
