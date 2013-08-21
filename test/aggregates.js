@@ -26,6 +26,12 @@ describe('#sum()', function() {
         var total = emptyArray.$_sum('test');
         assert.equal(total, null);
     });
+    
+    it('should sum simple number arrays', function() {
+        var simpleArray = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+        var total = simpleArray.$_sum();
+        assert.equal(total, 55);
+    });
 });
 
 describe('#min()', function() {
