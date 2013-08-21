@@ -125,7 +125,7 @@ describe('#where()', function() {
         
         var stringItems = [ '1', '2', '4', '5', '7', '8', '10' ];
         
-        var stringResult = items.$_where('7');
+        var stringResult = stringItems.$_where('7');
         assert.ok(Array.isArray(stringResult));
         assert.equal(stringResult.length, 1);
         assert.equal(stringResult[0], '7');
